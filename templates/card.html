@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+  <table>
+    <tr>
+      <td>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://www.shutterstock.com/shutterstock/photos/2415076223/display_1500/stock-vector-computer-cat-animal-meme-pixel-art-2415076223.jpg"
+            class="card-img-top"
+            alt="Cat Meme"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    {% for i in list %}
+    <tr>
+      <td>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://www.shutterstock.com/shutterstock/photos/2415076223/display_1500/stock-vector-computer-cat-animal-meme-pixel-art-2415076223.jpg"
+            class="card-img-top"
+            alt="Cat Meme"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content. Item {{ i }}
+            </p>
+          </div>
+        </div>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock content %}
